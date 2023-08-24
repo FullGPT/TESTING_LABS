@@ -27,6 +27,6 @@ public class WebService1 : System.Web.Services.WebService
     [WebMethod]
     public string HelloWorld()
     {
-         "Hola a todos";
+         return "Hola a todos";
     }
 }
