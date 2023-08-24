@@ -17,40 +17,28 @@ public class ServCitas : System.Web.Services.WebService
 
  }
 
-
  [WebMethod]
  public string HelloWorld() {
  return "Hello World";
  }
 
 
-
 [WebMethod]
- public String dameCita() 
+ public String dameCita() {
+  String [] citas = {
+   "No hay mal que por bien no venga",
+   "FRASE DE PRUEBA 2",
+   "No por mucho madrugar amanece mas temprano"};
+  Random random = new Random();
+  int numCita = random.Next(0,3);
+  return (citas[numCita]);
+ }
  
- String [] citas = {
- "No hay mal que por bien no venga",
- "FRASE DE PRUEBA 2",
- "No por mucho madrugar amanece mas temprano"};
- Random random = new Random();
- int numCita = random.Next(0,3);
- return (citas[numCita]);
- 
-
-
-
-
 [WebMethod]
  public String citaPropia(String laCita)
  {
  return ("Esta es tu cita: " + laCita);
  }
-
-
-
-
-
-
 
 }
 
