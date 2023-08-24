@@ -17,7 +17,7 @@ Public Class WebService2
          Case "DO"
              'dolar
             Return "30"
-         "RE"
+         Case "RE"
                 'real
                 Return "9.9"
          Case "EU"
