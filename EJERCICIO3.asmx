@@ -14,7 +14,7 @@ Public Class WebService1
     <System.Web.Services.WebMethod()> _
     Public Function FahrenheitToCelsius(ByVal Fahrenheit As Double) _
         As Double
-        ((Fahrenheit - 32) * 5) / 9
+        Return ((Fahrenheit - 32) * 5) / 9
     End Function
 
     
